@@ -1,4 +1,4 @@
-//  clang++ -o Kruskal Kruskal.cpp
+//  clang++ -o main main.cpp
 #include <iostream>
 #include <vector>
 
