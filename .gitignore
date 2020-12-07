@@ -37,6 +37,3 @@
 *.app
 
 /.DS_Store
-/.vscode
-/main
-/main.dSYM

@@ -1,17 +1,17 @@
-#include <ctime>
-#include <random>
-#include <set>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
 vector<int> generateVertices(int n) {
-    srand((unsigned)time(0));
+    vector<int> result;
 
-    set<int> vertices;
-    while (vertices.size() < n) vertices.insert(rand() % 100);
+    cout << "GENERATED VERTICES:\n";
+    for (size_t i = 0; i < n; ++i) {
+        result.push_back(i);
+        cout << result[i] << " ";
+    }
+    cout << "\n";
 
-    vector<int> result(vertices.begin(), vertices.end());
-    vertices.clear();
     return result;
 }
