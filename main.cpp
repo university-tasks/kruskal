@@ -8,8 +8,20 @@ using namespace std;
 
 int main() {
     int size;
-    cout << "Enter the number of vertices: ";
-    cin >> size;
+    bool isBiggerThan10000 = true;
+    while (isBiggerThan10000) {
+        cout << "Enter the number of vertices: ";
+        cin >> size;
+
+        if (size <= 1000 and size > 0) {
+            isBiggerThan10000 = false;
+        } else if (size > 1000) {
+            cout << "The number of vertices must be less than 10 000\n";
+        } else {
+            cout << "The number of vertices must be bigger than 0\n";
+        }
+         
+    }
 
     const vector<int> vertices = generateVertices(size);
     const vector<pair<int, pair<int, int> > > edges = generateEdges(vertices);
