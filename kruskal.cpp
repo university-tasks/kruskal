@@ -12,8 +12,6 @@ vector<pair<int, pair<int, int> > > kruskal(const vector<pair<int, pair<int, int
 
     vector<pair<int, pair<int, int> > > E = edges;
     sort(E.begin(), E.end(), comp);
-    cout << "\nSORTED EDGES:\n";
-    printEdges(E);
 
     DSU dsu(vertices);
 
